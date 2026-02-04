@@ -1,0 +1,27 @@
+📌 Project Objective
+Design and implement a real-time attention and distraction detection system that analyzes live webcam video to estimate a user’s focus level during screen-based activities.
+
+The system should combine object detection and facial behavior analysis to identify common distraction patterns—such as mobile phone usage, looking away from the screen, excessive blinking, and face absence—and compute a dynamic focus score along with a focused/distracted status.
+
+The primary goal is to build an interpretable, efficient, and real-time computer vision solution suitable for academic demonstrations, productivity monitoring, and human–computer interaction research.
+
+
+
+⚙️ Technology Stack
+Programming Language: Python
+
+Computer Vision: OpenCV
+
+Object Detection (Deep Learning): YOLO (pretrained on COCO) for mobile phone detection
+Facial Landmark Detection: MediaPipe FaceMesh for extracting facial and eye landmarks
+
+Focus Estimation:
+Rule-based logic using geometric facial features (EAR, gaze direction, head pose)
+Optional machine learning for focus classification/regression
+
+Model Utilities: NumPy, SciPy
+
+Optional Enhancements:
+Scikit-learn (baseline ML models)
+
+PyTorch (LSTM for temporal focus modeling)
